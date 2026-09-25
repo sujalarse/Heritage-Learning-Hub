@@ -16,7 +16,7 @@ export default function Dashboard() {
       setUser(JSON.parse(storedUser));
       
       // Fetch the live database profile to get updated scores
-      fetch('https://heritage-learning-hub.onrender.com/api/auth/profile', {
+      fetch('/api/auth/profile', {
         headers: { 'Authorization': `Bearer ${token}` }
       })
         .then(res => res.json())

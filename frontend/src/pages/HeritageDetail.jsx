@@ -12,7 +12,7 @@ export default function HeritageDetail() {
   useEffect(() => {
     const fetchSiteDetails = async () => {
       try {
-        const response = await fetch(`https://heritage-learning-hub.onrender.com/api/heritage/${id}`);
+        const response = await fetch(`/api/heritage/${id}`);
         const data = await response.json();
         setSite(data);
         setLoading(false);
@@ -43,7 +43,7 @@ export default function HeritageDetail() {
     // If they are logged in, send the score to the database silently in the background
     if (token) {
       try {
-        await fetch('https://heritage-learning-hub.onrender.com/api/auth/score', {
+        await fetch('/api/auth/score', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

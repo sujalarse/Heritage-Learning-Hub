@@ -48,7 +48,7 @@ export default function TeacherResources() {
     const token = localStorage.getItem('token');
 
     try {
-      const response = await fetch('https://heritage-learning-hub.onrender.com/api/heritage', {
+      const response = await fetch('/api/heritage', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

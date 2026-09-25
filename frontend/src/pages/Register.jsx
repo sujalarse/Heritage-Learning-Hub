@@ -23,7 +23,7 @@ export default function Register() {
     e.preventDefault(); // Prevents the page from refreshing
     
     try {
-      const response = await fetch('https://heritage-learning-hub.onrender.com/api/auth/register', {
+      const response = await fetch('/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

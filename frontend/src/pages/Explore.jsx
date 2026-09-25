@@ -9,7 +9,7 @@ export default function Explore() {
   useEffect(() => {
     const fetchSites = async () => {
       try {
-        const response = await fetch('https://heritage-learning-hub.onrender.com/api/heritage');
+        const response = await fetch('/api/heritage');
         const data = await response.json();
         setSites(data);
         setLoading(false);
