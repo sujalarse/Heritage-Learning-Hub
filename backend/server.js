@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
 // 2. Catch-all route: If the request isn't an API route, send back the React index.html
 // This is essential so React Router (like your /explore or /login pages) works without throwing a 404 error
-app.get('*', (req, res) => {
+app.get('/{*any}', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
 });
 
