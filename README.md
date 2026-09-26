@@ -36,3 +36,5 @@ Heritage Learning Hub is an interactive, full-stack educational web application 
 ```bash
 git clone [https://github.com/sujalarse/heritage-learning-hub-full.git](https://github.com/sujalarse/heritage-learning-hub-full.git)
 cd heritage-learning-hub-full
+```
+### 2. Environment Variables
