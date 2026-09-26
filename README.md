@@ -38,3 +38,27 @@ git clone [https://github.com/sujalarse/heritage-learning-hub-full.git](https://
 cd heritage-learning-hub-full
 ```
 ### 2. Environment Variables
+Create a .env file inside the backend directory and configure the following keys:
+```bash
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/?retryWrites=true&w=majority
+JWT_SECRET=your_super_secret_jwt_key
+PORT=5000
+```
+### 3. Install Dependencies
+Install the required packages for both the backend and frontend simultaneously:
+```bash
+npm install --prefix backend && npm install --prefix frontend
+```
+### 4. Run the Application Locally
+You will need two terminal windows to run the frontend and backend concurrently in development mode:
+
+Terminal 1 (Backend API):
+```bash
+cd backend
+nodemon server.js
+```
+Terminal 2 (React Frontend):
+```bash
+cd frontend
+npm run dev
+```
